@@ -47,7 +47,7 @@ def min_dist():
             min_index = u
     return min_index
 
-def dijsktra():
+def dijkstra():
 
     global grid,visited_list,distance_list,source_node
 
@@ -106,7 +106,7 @@ source_node = 10*(start_row-1)+(start_col-1)
 distance_list[source_node] = 0
 visited_list[source_node] = True
 
-dijsktra()
+dijkstra()
 
 print_sol()
 
